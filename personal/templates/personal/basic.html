@@ -1,0 +1,13 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+    <div class="pageTitle" layout="row" layout-align="start center">
+        <h2>Contact Info</h2>
+    </div>
+    <div class="postContent">
+        {% for c in content %}
+        <p>{{c}}</p>
+        {% endfor %}
+    </div>
+
+{% endblock %}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="djangoApp" lang="en">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>OS</title>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <script src="https://use.typekit.net/tdh2twx.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+        {% load staticfiles %}
+        <!-- <link rel="stylesheet" href="/static/css/styles.css" media="screen" title="no title" type = "text/css"> -->
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}" media="screen" title="no title" type = "text/css">
+
+    </head>
+    <body class="body">
+
+        <div ng-cloak>
+            <md-content class="md-padding md-medium-tall">
+                <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+                    <h1>Django and MD</h1>
+                    <md-nav-item md-nav-href="/" name="homePage">Home</md-nav-item>
+                    <md-nav-item md-nav-href="/blog/" name="blogPage">Blog</md-nav-item>
+                    <md-nav-item md-nav-href="/contact/" name="contactPage">Contact</md-nav-item>
+                </md-nav-bar>
+                <div flex></div>
+            </md-content>
+        </div>
+        <main>
+            <!-- <div layout="row" layout-align="center center" flex>
+                <h2>Experimenting with Django and Material Design</h2>
+            </div> -->
+            <div>
+                {% block content %}
+                {% endblock %}
+            </div>
+        </main>
+
+        <md-content class="md-medium-tall">
+            <div layout="row" layout-align="center center" flex>
+                <h4>Oswaldo Salazar Ⓒ 2016</h4>
+            </div>
+        </md-content>
+        <script src="/static/js/app.js"></script>
+        <script src="/static/js/controller.js"></script>
+        <!-- <script src="/static/js/directive.js"></script>
+        <script src="/static/js/service.js"></script> -->
+    </body>
+</html>
