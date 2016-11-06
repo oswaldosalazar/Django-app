@@ -10,5 +10,4 @@ app.config(function($interpolateProvider, $routeProvider, $locationProvider) {
         templateUrl: 'basic.html'
     })
     $locationProvider.html5Mode(true);
-    console.log("Here")
 });

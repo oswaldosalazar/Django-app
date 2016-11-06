@@ -39,6 +39,9 @@ md-grid-list {
 .myTitle {
     font-size: 1.2em;
 }
+.contactTitle {
+    padding-left: 6em;
+}
 .applications {
     padding-top: 50px;
     font-size: 1.5em;

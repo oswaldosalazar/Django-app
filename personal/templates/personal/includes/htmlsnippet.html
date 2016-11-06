@@ -1,7 +1,7 @@
 {% block content %}
-<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="3" md-cols-gt-md="3" md-row-height-gt-md="4:3" md-row-height="4:3" md-gutter="12px" md-gutter-gt-sm="8px" ng-cloak>
+<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4" md-row-height-gt-md="4:3" md-row-height="4:3" md-gutter="12px" md-gutter-gt-sm="8px" ng-cloak>
 
-    <md-grid-tile class="mainHeader" md-rowspan="1" md-colspan="3" md-colspan-sm="2" md-colspan-xs="1">
+    <md-grid-tile class="mainHeader" md-rowspan="2" md-colspan="4" md-colspan-sm="2" md-colspan-xs="1">
         <div layout-align="center center" flex layout="column">
             <div class="myName">
                 <h1>Oswaldo Salazar</h1>
@@ -11,9 +11,24 @@
             </div>
         </div>
     </md-grid-tile>
+    <md-grid-tile class="resume" md-rowspan="1" md-colspan="2" md-colspan-sm="2">
+        <h1 class="resumeText"><a target="_blank" href="https://docs.google.com/document/d/1RtcJr5Dj_w3vTkRFrkWfiSVkmw8jCmy08p-XJ8uAIHo/edit">Résumé</a></h1>
+    </md-grid-tile>
+
+    <md-grid-tile class="contact" md-rowspan="1" md-colspan="2" md-colspan-sm="2">
+        <div class="contactTitle" layout="column center center" flex>
+            <h1>Contact</h1>
+        </div>
+        <div layout="column" flex>
+            <h4 class="resumeText"><i class="fa fa-mobile fa-lg" aria-hidden="true"></i>  (720) 295-2692</h4>
+            <h4 class="resumeText"><a target="_blank" href="mailto:oswaldo.r.salazar@gmail.com"><i class="fa fa-envelope-square" aria-hidden="true"></i> oswaldo.r.salazar@gmail.com</a></h4>
+            <h3 class="resumeText"><a target="_blank" href="https://github.com/oswaldosalazar"><i class="fa fa-github" aria-hidden="true"></i>  /oswaldosalazar</a></h3>
+            <h3 class="resumeText"><a target="_blank" href="https://linkedin.com/in/oswaldosalazar"><i class="fa fa-linkedin" aria-hidden="true"></i>  /in/oswaldosalazar</a></h3>
+        </div>
+    </md-grid-tile>
 
     <md-grid-tile class="portfolio" md-rowspan="1" md-colspan="1">
-        <h1><i class="material-icons">work</i> Portfolio</h1>
+        <h1>Portfolio</h1>
     </md-grid-tile>
 
     <md-grid-tile ng-repeat="item in view.portfolio" class="portfolio">
@@ -23,13 +38,6 @@
         </div>
     </md-grid-tile>
 
-    <md-grid-tile class="resume">
-        <h1 class="resumeText"><a target="_blank" href="https://docs.google.com/document/d/1RtcJr5Dj_w3vTkRFrkWfiSVkmw8jCmy08p-XJ8uAIHo/edit"><i class="material-icons">assignment_turned_in</i> Résumé</a></h1>
-    </md-grid-tile>
-
-    <md-grid-tile class="contact">
-        <h1 class="resumeText"><a target="_blank" href="/contact/"><i class="material-icons">phone_iphone</i> Contact</a></h1>
-    </md-grid-tile>
 
 </md-grid-list>
 
