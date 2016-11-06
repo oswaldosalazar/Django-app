@@ -1,5 +1,5 @@
 {% block content %}
-<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="3" md-cols-gt-md="3" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px" ng-cloak>
+<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="3" md-cols-gt-md="3" md-row-height-gt-md="4:3" md-row-height="4:3" md-gutter="12px" md-gutter-gt-sm="8px" ng-cloak>
 
     <md-grid-tile class="mainHeader" md-rowspan="1" md-colspan="3" md-colspan-sm="2" md-colspan-xs="1">
         <div layout-align="center center" flex layout="column">
@@ -12,16 +12,23 @@
         </div>
     </md-grid-tile>
 
-    <md-grid-tile class="portfolio">
-        <h1>{[{ view.title }]}</h1>
+    <md-grid-tile class="portfolio" md-rowspan="1" md-colspan="1">
+        <h1><i class="material-icons">work</i> Portfolio</h1>
+    </md-grid-tile>
+
+    <md-grid-tile ng-repeat="item in view.portfolio" class="portfolio">
+        <div layout="column" flex>
+            <h1 class="itemTitle"> <a ng-href="{[{ item.appUrl }]}">{[{ item.title }]}</a></h1>
+            <h2 class="portfolioItem">{[{ item.description }]}</h2>
+        </div>
     </md-grid-tile>
 
     <md-grid-tile class="resume">
-        <h1>Résumé</h1>
+        <h1 class="resumeText"><a target="_blank" href="https://docs.google.com/document/d/1RtcJr5Dj_w3vTkRFrkWfiSVkmw8jCmy08p-XJ8uAIHo/edit"><i class="material-icons">assignment_turned_in</i> Résumé</a></h1>
     </md-grid-tile>
 
     <md-grid-tile class="contact">
-        <h1>Contact</h1>
+        <h1 class="resumeText"><a target="_blank" href="/contact/"><i class="material-icons">phone_iphone</i> Contact</a></h1>
     </md-grid-tile>
 
 </md-grid-list>

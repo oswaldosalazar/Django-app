@@ -10,7 +10,6 @@ p, div, input {
     font-weight: 300;
 }
 .body {
-    background-color: #e5e1ee;
     padding-top: 10;
 }
 main {
@@ -40,11 +39,31 @@ md-grid-list {
 .myTitle {
     font-size: 1em;
 }
+.applications {
+    padding-top: 50px;
+    font-size: 1.5em;
+    color: #475a70;
+}
 .portfolio {
   background: #81a4cd;
 }
 .resume {
   background: #5bc0eb;
+}
+.itemTitle {
+    text-align: center;
+}
+.itemTitle a{
+    color: #000000;
+    text-decoration: none;
+}
+.portfolioItem{
+    padding-top: 20px;
+    text-align: center;
+}
+.resumeText a {
+    color: #000000;
+    text-decoration: none;
 }
 .contact {
   background: #b7d1da;
