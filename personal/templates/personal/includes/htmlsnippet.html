@@ -11,7 +11,7 @@
             </div>
         </div>
     </md-grid-tile>
-    
+
     <md-grid-tile class="resume" md-rowspan="1" md-colspan="2" md-colspan-sm="2">
         <h1 class="resumeText"><a target="_blank" href="https://docs.google.com/document/d/1RtcJr5Dj_w3vTkRFrkWfiSVkmw8jCmy08p-XJ8uAIHo/edit">Résumé</a></h1>
     </md-grid-tile>
@@ -22,9 +22,9 @@
         </div>
         <div>
             <h4 class="resumeText"><i class="fa fa-mobile fa-lg" aria-hidden="true"></i>  (720) 295-2692</h4>
-            <h4 class="resumeText"><a target="_blank" href="mailto:oswaldo.r.salazar@gmail.com"><i class="fa fa-envelope-square" aria-hidden="true"></i> oswaldo.r.salazar@gmail.com</a></h4>
-            <h3 class="resumeText"><a target="_blank" href="https://github.com/oswaldosalazar"><i class="fa fa-github" aria-hidden="true"></i>  /oswaldosalazar</a></h3>
-            <h3 class="resumeText"><a target="_blank" href="https://linkedin.com/in/oswaldosalazar"><i class="fa fa-linkedin" aria-hidden="true"></i>  /in/oswaldosalazar</a></h3>
+            <h4 class="resumeText"><a target="_blank" ng-href="mailto:oswaldo.r.salazar@gmail.com"><i class="fa fa-envelope-square" aria-hidden="true"></i> oswaldo.r.salazar@gmail.com</a></h4>
+            <h3 class="resumeText"><a target="_blank" ng-href="https://github.com/oswaldosalazar"><i class="fa fa-github" aria-hidden="true"></i>  /oswaldosalazar</a></h3>
+            <h3 class="resumeText"><a target="_blank" ng-href="https://linkedin.com/in/oswaldosalazar"><i class="fa fa-linkedin" aria-hidden="true"></i>  /in/oswaldosalazar</a></h3>
         </div>
     </md-grid-tile>
 
@@ -34,7 +34,7 @@
 
     <md-grid-tile ng-repeat="item in view.portfolio" class="portfolio">
         <div layout="column" flex>
-            <h2 class="itemTitle"> <a ng-href="{[{ item.appUrl }]}">{[{ item.title }]}</a></h2>
+            <h2 class="itemTitle"> <a target="_blank" ng-href="{[{ item.appUrl }]}">{[{ item.title }]}</a></h2>
             <h3 class="portfolioItem">{[{ item.description }]}</h3>
         </div>
     </md-grid-tile>
