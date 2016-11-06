@@ -2,13 +2,13 @@ app.controller("mainAppCtrl", function($scope) {
     $scope.view = {};
     $scope.view.portfolio = [
         {
-            "title": "GnarCars",
+            "title": "GnarCar",
             "description": "Carpool app for skiers and snowboarders",
             "appUrl": "https://gnarcar.herokuapp.com/"
         },
         {
             "title": "Captain's Log",
-            "description": "Blog with posts and comments",
+            "description": "Blog with posts and comments using social auth",
             "appUrl": "https://captainslog-1.herokuapp.com/"
         },
         {

@@ -15,11 +15,11 @@
         <h1 class="resumeText"><a target="_blank" href="https://docs.google.com/document/d/1RtcJr5Dj_w3vTkRFrkWfiSVkmw8jCmy08p-XJ8uAIHo/edit">Résumé</a></h1>
     </md-grid-tile>
 
-    <md-grid-tile class="contact" md-rowspan="1" md-colspan="2" md-colspan-sm="2">
-        <div class="contactTitle" layout="column center center" flex>
+    <md-grid-tile class="contact" md-rowspan="1" md-colspan="2" md-colspan-sm="2" layout="row" flex>
+        <div class="contactTitle">
             <h1>Contact</h1>
         </div>
-        <div layout="column" flex>
+        <div>
             <h4 class="resumeText"><i class="fa fa-mobile fa-lg" aria-hidden="true"></i>  (720) 295-2692</h4>
             <h4 class="resumeText"><a target="_blank" href="mailto:oswaldo.r.salazar@gmail.com"><i class="fa fa-envelope-square" aria-hidden="true"></i> oswaldo.r.salazar@gmail.com</a></h4>
             <h3 class="resumeText"><a target="_blank" href="https://github.com/oswaldosalazar"><i class="fa fa-github" aria-hidden="true"></i>  /oswaldosalazar</a></h3>
@@ -33,8 +33,8 @@
 
     <md-grid-tile ng-repeat="item in view.portfolio" class="portfolio">
         <div layout="column" flex>
-            <h1 class="itemTitle"> <a ng-href="{[{ item.appUrl }]}">{[{ item.title }]}</a></h1>
-            <h2 class="portfolioItem">{[{ item.description }]}</h2>
+            <h2 class="itemTitle"> <a ng-href="{[{ item.appUrl }]}">{[{ item.title }]}</a></h2>
+            <h3 class="portfolioItem">{[{ item.description }]}</h3>
         </div>
     </md-grid-tile>
 

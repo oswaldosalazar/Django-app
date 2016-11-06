@@ -40,7 +40,7 @@ md-grid-list {
     font-size: 1.2em;
 }
 .contactTitle {
-    padding-left: 6em;
+    padding-right: 4em;
 }
 .applications {
     padding-top: 50px;
@@ -70,6 +70,7 @@ md-grid-list {
 }
 .contact {
   background: #b7d1da;
+  justify-content: space-between;
 }
 md-grid-tile {
   transition: all 400ms ease-out 50ms;
