@@ -10,7 +10,8 @@ p, div, input {
     font-weight: 300;
 }
 .body {
-    background-color: #f6f6f6;
+    background-color: #e5e1ee;
+    padding-top: 10;
 }
 main {
   min-height: calc(100vh - 176px);
@@ -26,4 +27,31 @@ main {
 }
 .pageTitle {
     padding: 20px;
+}
+md-grid-list {
+    margin: 8px;
+}
+.mainHeader {
+    background: #cdd6dd;
+}
+.myName {
+    font-size: 2.5em;
+}
+.myTitle {
+    font-size: 1em;
+}
+.portfolio {
+  background: #81a4cd;
+}
+.resume {
+  background: #5bc0eb;
+}
+.contact {
+  background: #b7d1da;
+}
+md-grid-tile {
+  transition: all 400ms ease-out 50ms;
+}
+.footer{
+    background: #cdd6dd;
 }

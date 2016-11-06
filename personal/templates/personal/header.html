@@ -19,37 +19,27 @@
         <link rel="stylesheet" href="{% static 'css/styles.css' %}" media="screen" title="no title" type = "text/css">
 
     </head>
-    <body class="body">
+    <body class="body" ng-controller="mainAppCtrl">
 
         <div ng-cloak>
-            <md-content class="md-padding md-medium-tall">
+            <!-- <md-content class="md-padding md-medium-tall">
                 <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
                     <h1>Django and MD</h1>
                     <md-nav-item md-nav-href="/" name="homePage">Home</md-nav-item>
                     <md-nav-item md-nav-href="/blog/" name="blogPage">Blog</md-nav-item>
+                    <md-nav-item target="_blank" md-nav-href="https://about.me/oswaldosalazar" name="aboutMe">About me</md-nav-item>
                     <md-nav-item md-nav-href="/contact/" name="contactPage">Contact</md-nav-item>
                 </md-nav-bar>
                 <div flex></div>
-            </md-content>
+            </md-content> -->
+
         </div>
         <main>
-            <!-- <div layout="row" layout-align="center center" flex>
-                <h2>Experimenting with Django and Material Design</h2>
-            </div> -->
-            <div>
-                {% block content %}
-                {% endblock %}
-            </div>
+            {% block content %}
+            {% endblock %}
         </main>
 
-        <md-content class="md-medium-tall">
-            <div layout="row" layout-align="center center" flex>
-                <h4>Oswaldo Salazar Ⓒ 2016</h4>
-            </div>
-        </md-content>
         <script src="/static/js/app.js"></script>
         <script src="/static/js/controller.js"></script>
-        <!-- <script src="/static/js/directive.js"></script>
-        <script src="/static/js/service.js"></script> -->
     </body>
 </html>
