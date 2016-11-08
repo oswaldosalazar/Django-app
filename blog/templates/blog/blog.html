@@ -5,10 +5,10 @@
     </div>
     <md-grid-list layout="row" layout-sm="column" md-cols-xs="4" md-cols-sm="6" md-cols-md="12" md-cols-gt-md="12" md-row-height-gt-md="6:6" md-row-height="6:6" md-gutter="12px" md-gutter-gt-sm="8px" ng-cloak>
         {% for post in object_list %}
-            <md-grid-tile class="blue" md-rowspan="1" md-colspan="3" md-colspan-sm="2" md-colspan-xs="1">
+            <md-grid-tile class="blue" md-rowspan="1" md-colspan="3" md-colspan-sm="2" md-colspan-xs="2">
                 <h4>{{ post.date|date:"Y-m-d" }} </h4>
             </md-grid-tile>
-            <md-grid-tile class="red" md-rowspan="1" md-colspan="9" md-colspan-sm="4" md-colspan-xs="3">
+            <md-grid-tile class="red" md-rowspan="1" md-colspan="9" md-colspan-sm="4" md-colspan-xs="2">
                 <h4><a href="/blog/{{post.id}}"> {{ post.title }}</a></h4>
             </md-grid-tile>
         {% endfor %}
