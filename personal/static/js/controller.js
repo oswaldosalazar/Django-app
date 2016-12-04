@@ -2,6 +2,11 @@ app.controller("mainAppCtrl", function($scope) {
     $scope.view = {};
     $scope.view.portfolio = [
         {
+            "title": "Colorado Ballet Parents Guide",
+            "description": "App showing the schedule of Colorado Ballet Academy students performing in The Nutcracker",
+            "appUrl": "https://cba-app.firebaseapp.com/"
+        },
+        {
             "title": "GnarCar",
             "description": "Carpool app for skiers and snowboarders",
             "appUrl": "https://gnarcar.herokuapp.com/"
