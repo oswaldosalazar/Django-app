@@ -31,5 +31,10 @@ app.controller("mainAppCtrl", function($scope) {
             "description": "Angular front end store with shopping cart",
             "appUrl": "https://teashopping-5fe05.firebaseapp.com/"
         },
+        {
+            "title": "More coming!",
+            "description": "",
+            "appUrl": ""
+        },
     ]
 });
