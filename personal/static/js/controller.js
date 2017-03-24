@@ -12,6 +12,11 @@ app.controller("mainAppCtrl", function($scope) {
             "appUrl": "https://gnarcar.herokuapp.com/"
         },
         {
+            "title": "Fooder",
+            "description": "Tinder + Food = Fooder! Select nearby restaurants on the go.",
+            "appUrl": "https://fooder2-fcfb7.firebaseapp.com/"
+        },
+        {
             "title": "Captain's Log",
             "description": "Blog with posts and comments using social auth",
             "appUrl": "https://captainslog-1.herokuapp.com/"
@@ -30,11 +35,6 @@ app.controller("mainAppCtrl", function($scope) {
             "title": "Tea Shop",
             "description": "Angular front end store with shopping cart",
             "appUrl": "https://teashopping-5fe05.firebaseapp.com/"
-        },
-        {
-            "title": "More coming!",
-            "description": "",
-            "appUrl": ""
-        },
+        }
     ]
 });
