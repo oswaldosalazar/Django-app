@@ -17,6 +17,11 @@ app.controller("mainAppCtrl", function($scope) {
             "appUrl": "https://fooder2-fcfb7.firebaseapp.com/"
         },
         {
+            "title": "WeatherApp with React Redux",
+            "description": "Five-day weather forecast for multiple cities.",
+            "appUrl": "https://redux-open-weather.herokuapp.com/"
+        },
+        {
             "title": "Captain's Log",
             "description": "Blog with posts and comments using social auth",
             "appUrl": "https://captainslog-1.herokuapp.com/"
@@ -30,11 +35,6 @@ app.controller("mainAppCtrl", function($scope) {
             "title": "Reddit Clone",
             "description": "Angular front end app with posts and comments",
             "appUrl": "https://redditclone-ad941.firebaseapp.com/"
-        },
-        {
-            "title": "Tea Shop",
-            "description": "Angular front end store with shopping cart",
-            "appUrl": "https://teashopping-5fe05.firebaseapp.com/"
         }
     ]
 });
